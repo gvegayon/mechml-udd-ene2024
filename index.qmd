@@ -1,0 +1,181 @@
+---
+format: revealjs
+title: La Muerte del Aprendizaje de Máquina
+author: George G. Vega Yon, Ph.D.
+institute: 
+  - University of Utah, US
+  - Booz Allen Hamilton, US
+slide-level: 2
+slide-number: true
+---
+
+## {background-color="black"} 
+
+Pueden descargar la presentación en https://ggv.cl/udd-ene2024
+
+## Sobre mi
+
+- Profesor de Investigación en Epidemiología de la Universidad de Utah.
+
+- Lead Scientist en la consultora Booz Allen Hamilton.
+
+- Doctor en Bioestadística de la Universidad del Sur de California (USC).
+
+- Magíster en Ciencias Sociales del Instituto Tecnológico de California (Caltech).
+
+- Magíster en Economía y Poíticas Públicas de la Universidad Adolfo Ibáñez (UAI).
+
+
+# Parte I: La Revolucion de la IA
+
+## Definición
+
+Según Wikipedia:
+
+> La Inteligencia Artificial (o AI por sus siglas en inglés...)
+
+## ¿Cuál es la diferencia entre AI, Machine Learning, y Estadística?
+
+- AI es un sub-campo del aprendizaje de máquina.
+
+- Para algunos, AI y ML sólo es esadística sin preocupaciones. (tiene algo de cierto!)
+
+- La mayor diferencia entre AI/ML y estadística está en:
+
+    a. Lenguaje: Cómo llamamos a las variables.
+
+    b. Objetivo: Estadistica es inferencia, AI/ML es predicción.
+
+- Este último punto será importante para más adelante en la presentación.
+
+## ¿Por qué ahora?
+
+- Los modelos de redes neuronales que dan poder a la IA tienen más de ...
+
+- Un componente fundamental: Las Redes Neuronales Artificiales.
+
+- Pero la tecnología necesaria tiene ...
+
+- Más aún, estos modelos adquieren potencial sólo con grandes volúmenes de datos...
+
+## ¿Cómo funcionan estos modelos?
+
+En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina funcionan de la siguiente manera:
+
+1. Se recopilan datos (base de datos o BD).
+
+2. Usualmente esos datos están etiquetados (aprendizaje supervisado) o no (aprendizaje no supervisado.)
+
+3. Se diseña un modelo (arquitectura) que significa:
+
+    a. Identificar qué variables de la BD se utilizarán (selección).
+
+    b. Se especifíca cómo se procesarán los datos (hyperpárametros).
+
+    c. Se elíge cuál es el criterio para decir si el algoritmo funciona o no (función de pérdida)
+
+4. Entrenar el modelo utilizando sólo una parte de la BD (set de entrenamiento.)
+
+5. Evaluar la calidad del modelo sobre los datos no usados para entrenar (set de validación.)
+
+## ¿Cuál es el estado del arte?
+
+- El último grito de la moda está con los llamados modelos de lenguaje grandes (*Large Language Models*.)
+
+- Estos se basan en una clase de modelos llamados modelos generativos (*generative models*.)
+
+- La clave: La función de pérdida de estos modelos se centra en predir sequencias.
+
+- También son implentados con redes neuronales.
+
+# Parte II: Los desafios
+
+## Hemos avanzado, pero...
+
+- Los últimos avances han sido extraordinarios, pero todavía hay mucho que aprender.
+
+- Evidecia de esto son algunos de los problemas que se observa en la calidad de las predicciones.
+
+## Caso 1: Google Flu Trends
+
+- En el año ..., utilizando "Big Data," Google creo el servicio Google Flu Trends.
+
+- La idea era lógica: En los lugares donde la gente comienza a experimentar sintomas, las tendencias de búsqueda lo reflejarán.
+
+- El resultado: Embarazosamente para Google, no muy bueno:
+
+![Imagen del grafico]()
+
+## Caso 2: Modelo demasiado bueno
+
+- En Enero de 2024, el usuario XXXX posteo en X la siguiente imagen:
+
+![Imagen de movie prompts]()
+
+- El problema: Como los LLM tienen billones de parámetros, es muy fácil terminar memorizando datos de entrenamiento... eso no es aprendizaje.
+
+## Caso 3: Surreal
+
+- Aca, la tarea era "sencilla:" Actores de películas en conferencia de prensa en Canes:
+
+![Dedos y demas combinado]()
+
+## Caso 4: Error 404
+
+En ABC del 2023 recibí este correo:
+
+> ...
+
+¿Cuál creen ustedes que fué el problema?... ¡Dicha función nunca existió!
+
+# Parte III: La teoría al rescate
+
+## Volviendo a lo Básico
+
+- Un motivo por el cual la AI y ML no se han tomado las ciencias por completo es claro (ver ejemplos anteriores).
+
+- El mínimo común de esos problemas: La falta de teoría (no teoría matemática).
+
+- Existe todo un campo en las ciencias de la computación para poder explicar los resultado de la IA/ML.
+
+- Incluso el ejército de los EEUU está invirtiendo en el asunto.
+
+## Volviendo a lo Básico (cont.)
+
+- Pero con tanto hype, es difícil alejarse de esto.
+
+- Sin embargo, algunos científicos han comenzado a proponer algo distinto: Casar los modelos mecanísticos con la AI/ML.
+
+## El aprendizaje de máquina mecanístico
+
+Una idea simple
+
+- Las ciencias llevan cientos de años acumulando conocimiento.
+
+- En la física, por ejemplo, contamos con modelos que explican con gran detalle una parte importante de lo que observamos.
+
+- La AI/ML por otro lado tiene la ventaja cuando se trata de procesar cantidades masivas de datos.
+
+Entonces, ¿Por qué no utilizamos ambos?
+
+## Caso 1: Detectando la temperatura de la superficie del agua
+
+## Caso 3: Mejorando los pronósticos de la influenza
+
+## Caso 2: Prediciendo lo que hacen los genes
+
+- En mi propia investigación me he visto motivado a utilizar la AI/ML.
+
+- Desarrollé un modelo mecanístico de la evolución de los genes.
+
+- La clave: Incorpora información sobre los procesos que llevan a aparición de nuevas funciones genénicas.
+
+- Mi contribución: Incluir mis predicciones mecanísticas en un modelo de AI/ML.
+
+- Resultado: El modelo combinado superó a ambos por XXX.
+
+# Discusión
+
+## Discusión
+
+## Referencias
