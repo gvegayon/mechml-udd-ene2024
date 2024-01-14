@@ -207,7 +207,7 @@ Utilizando el texto: "fontanero de video juegos", los autores del artículo logr
 
 ![Imagen descargada de @GenerativeAIHas](fig/plumber.png){width="50%" fig-align="center"}
 
----
+## {.smaller}
 
 Un texto simple: "captura de pantalla de peliculas populares"
 
