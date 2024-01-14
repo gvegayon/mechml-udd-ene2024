@@ -240,7 +240,7 @@ Un texto simple: "captura de pantalla de peliculas populares"
 
 - Sin embargo, algunos científicos han comenzado a proponer algo distinto: Casar los modelos mecanísticos con la AI/ML.
 
-## El aprendizaje de máquina mecanístico
+## El aprendizaje de máquina mecanístico {.smaller}
 
 Una idea simple
 
@@ -252,11 +252,67 @@ Una idea simple
 
 Entonces, ¿Por qué no utilizamos ambos?
 
-## Caso 1: Detectando la temperatura de la superficie del agua
+## Estado del arte en MechML
 
-## Caso 3: Mejorando los pronósticos de la influenza
+::: {style="font-size: 60%"}
+::: {.fragment}
+- Corregir predicciones mechanisticas, como por ejemplo, en modelos basados en agentes [@compagniHybridNeuralNetworkSEIR2022].
+:::
 
-## Caso 2: Prediciendo lo que hacen los genes
+::: {.fragment}
+- Incorporar información generada con modelos teóricos como una capa de datos adicionales en genética. [@zampieriMachineDeepLearning2019]
+:::
+
+::: {.fragment}
+- Utilizar rede géneticas ("gene pathways") para incorporar información externa en modelos predictivos. [@altaweraqiImprovedPredictionGene2022]
+:::
+
+::: {.fragment}
+- Crear funciones de pérdida (en ML) que incorporen penalización mecanística para modelar la densidad de las celulas cancerígenas [@gawIntegrationMachineLearning2019]
+:::
+
+::: {.fragment}
+- Combinar simulaciones de modelos causales con redes neuronales para predicciones epidemiológicas [@wangTDEFSITheoryguidedDeep2020].
+:::
+
+::: {.fragment}
+- y mucho más [@jornerMachineLearningMeets2021; @willardIntegratingScientificKnowledge2022a; @jiaPhysicsGuidedMachineLearning2021; @vonruedenInformedMachineLearning2023]
+:::
+:::
+
+::: {.fragment}
+::: {.callout-warning}
+1. Mechanistic Machine Learning **no es** diseño de variables. Necesitas un modelo completo mecanístico completo para integrar con el modelo predictivo.
+
+2. Tampoco es lo que se conoce como ML ensamble, donde se mezclan predicciones después de generalas.
+:::
+
+:::
+
+## Caso 1: Detectando la temperatura de la superficie del agua {.smaller}
+
+- En @jiaPhysicsGuidedMachineLearning2021, los autores presentan su modelo de "redes neuronales recurrentes guiadas por la física" (*physics-guided recurrent neural network model*, o PGRNN)"
+
+::: {.columns}
+::: {.column width="50%"}
+![](fig/pgrnn.png)
+:::
+::: {.column width="50%"}
+![](fig/lake-model.png)
+:::
+:::
+
+> Así, PGRNN puede aprovechar las fortalezas de los modelos basados en la física y llena vacíos de conocimiento empleando modelos predictivos de vanguardia que aprenden de los datos. -- @jiaPhysicsGuidedMachineLearning2021
+
+## Caso 2: Mejorando los pronósticos de la influenza {.smaller}
+
+- @wangTDEFSITheoryguidedDeep2020 presenta el modelo de predicción epidemiológica utilizando redes neuronales guiadas por modelos teóricos (*Theory-guided Deep Learning-based Epidemic Forecasting with Synthetic Information*, o TDEFSI).
+
+::: {layout-align="center"}
+![](fig/theory-guided-influenza-forecast.png)
+:::
+
+## Caso 3: Prediciendo lo que hacen los genes
 
 - En mi propia investigación me he visto motivado a utilizar la AI/ML.
 
@@ -271,5 +327,20 @@ Entonces, ¿Por qué no utilizamos ambos?
 # Discusión
 
 ## Discusión
+
+## Fin {background-color="black"}
+
+::: {style="text-align: center"} 
+¡Gracias!
+
+<text style="font-weight: bold; font-size: 120%">"La Muerte del Aprendizaje de Máquina"</text>
+
+George G. Vega Yon, Ph.D.
+
+[https://ggv.cl](https://ggv.cl)
+
+george.vegayon@utah.edu
+
+:::
 
 ## Referencias
