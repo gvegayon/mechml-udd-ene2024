@@ -9,7 +9,7 @@ slide-level: 2
 slide-number: true
 embed-resources: true
 bibliography: references.bib
-footer: '<text style="font-size: 80%">La Muerte del Aprendizaje de Máquina -- <a href="https://ggv.cl/udd-ene2024">https://ggv.cl/udd-ene2024</a></text>'
+footer: '<text style="font-size: 100%">La Muerte del Aprendizaje de Máquina -- <a href="https://ggv.cl/udd-ene2024">https://ggv.cl/udd-ene2024</a></text>'
 ---
 
 ## {background-color="black"} 
