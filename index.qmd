@@ -8,6 +8,7 @@ institute:
 slide-level: 2
 slide-number: true
 bibliography: references.bib
+footer: '<text style="font-size: 80%">La Muerte del Aprendizaje de Máquina -- <a href="https://ggv.cl/udd-ene2024">https://ggv.cl/udd-ene2024</a></text>'
 ---
 
 ## {background-color="black"} 
@@ -92,7 +93,7 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 5. Evaluar la calidad del modelo sobre los datos no usados para entrenar (set de validación.)
 :::
 
-## ¿Cuál es el estado del arte?
+## ¿Cuál es el estado del arte? {.smaller}
 
 - El último grito de la moda está con los llamados modelos de lenguaje grandes (*Large Language Models*.)
 
@@ -101,6 +102,18 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 - La clave: La función de pérdida de estos modelos se centra en predir sequencias.
 
 - También son implentados con redes neuronales.
+
+## Large language models {.smaller}
+
+NVidia tiene una muy buena descripción de estos modelos [@leeWhatAreLarge2023]:
+
+- **Datos grandes.** Típicamente entrenados en con datos que incluyen casi todo lo que se ha escrito en internet en un largo periodo de tiempo.
+
+- **Redes neuronales.** Se pasa la información a un algorithmo de AI no supervisado.
+
+- **Secuencias + patrones.** Los LLM "aprenden" palabras, relaciones entre ellas, y conceptos. La idea clave: Contexto.
+
+- **Que viene después.** Así como las personas pueden "adivinar" la siguiente palabra (patrones), también los LLM.
 
 # Parte II: Los desafios
 
@@ -151,7 +164,18 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 - Puede generar imágenes realistas, pero no entiende de anatomía humana:
 
+::: {.columns}
+
+::: {.column width="50%"}
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Midjourney is getting crazy powerful—none of these are real photos, and none of the people in them exist. <a href="https://t.co/XXV6RUrrAv">pic.twitter.com/XXV6RUrrAv</a></p>&mdash; Miles (@mileszim) <a href="https://twitter.com/mileszim/status/1613965684937224192?ref_src=twsrc%5Etfw">January 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+:::
+
+::: {.column width="50%"}
+![Imagen descargada de @WhyAIgeneratedHands. Dall-E 2 intentando recrear manos humanas.](https://c02.purpledshub.com/uploads/sites/41/2023/02/Dall-e-2-hands-7eba177.jpg?webp=1&w=1200)
+:::
+:::
 
 ## Caso 4: Pinocho {.smaller}
 
