@@ -29,7 +29,7 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 - Magíster en Economía y Poíticas Públicas de la Universidad Adolfo Ibáñez (UAI).
 
 
-# Parte I: La Revolucion de la IA
+# Parte I: La Revolucion de la IA {background-color="black"}
 
 ## Definición
 
@@ -75,12 +75,12 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina funcionan de la siguiente manera:
 
 ::: {.fragment}
-
 1. Obtener datos:
 
     a. Etiquetados: aprendizaje supervisado.
     b. No etiquetados: aprendizaje no supervisado.
-
+:::
+::: {.fragment}
 3. Diseñar modelo (arquitectura):
 
     a. Qué variables de la BD se utilizarán (selección).
@@ -88,61 +88,83 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
     b. Como se procesarán los datos (hyperpárametros).
 
     c. Definir criterio para aproximar los datos (función de pérdida).
-
+:::
+::: {.fragment}
 4. Entrenar el modelo  con set de entrenamiento (una parte de los datos).
-
+:::
+::: {.fragment}
 5. Evaluar la calidad del modelo sobre los datos no usados para entrenar (set de validación.)
 :::
 
 ## ¿Cuál es el estado del arte? {.smaller}
 
+::: {.fragment}
 - El último grito de la moda está con los llamados modelos de lenguaje grandes (*Large Language Models*.)
+:::
 
+::: {.fragment}
 - Estos se basan en una clase de modelos llamados modelos generativos (*generative models*.)
+:::
 
-- La clave: La función de pérdida de estos modelos se centra en predir sequencias.
+::: {.fragment}
+- La clave: La función de pérdida de estos modelos se centra en predecir sequencias.
+:::
 
+::: {.fragment}
 - También son implentados con redes neuronales.
+:::
 
 ## Large language models {.smaller}
 
 NVidia tiene una muy buena descripción de estos modelos [@leeWhatAreLarge2023]:
 
+::: {.fragment}
 - **Datos grandes.** Típicamente entrenados en con datos que incluyen casi todo lo que se ha escrito en internet en un largo periodo de tiempo.
+:::
 
+::: {.fragment}
 - **Redes neuronales.** Se pasa la información a un algorithmo de AI no supervisado.
+:::
 
+::: {.fragment}
 - **Secuencias + patrones.** Los LLM "aprenden" palabras, relaciones entre ellas, y conceptos. La idea clave: Contexto.
+:::
 
+::: {.fragment}
 - **Que viene después.** Así como las personas pueden "adivinar" la siguiente palabra (patrones), también los LLM.
+:::
 
-# Parte II: Los desafios
+# Parte II: Los desafios {background-color="black"}
 
 ## Hemos avanzado, pero... {.smaller}
 
-::: {}
 
 ::: {.fragment}
 - Con toda la atención que ha recibido la AI/ML, la atención está volviendo a la teoría (inferencia) [@bakerMechanisticModelsMachine2018; @pearlSevenToolsCausal2019]
 :::
 
 ::: {.fragment}
-- El caso de Google Flu Trends: El artículo reportó una correlación de casi 100% [@ginsbergDetectingInfluenzaEpidemics2009], pero sobreestimó [@kandulaReappraisingUtilityGoogle2019; @lazerParableGoogleFlu2014].
+Revisaremos algunos casos donde la AI/ML ha fallado.
 :::
 
+
+## Caso 1: Google Flu Trends {.smaller}
+
+::: {.fragment}
+- Proyecto liderado por Google.org entre el 2008 y 2015 para ayudar a combatir los brotes de influenza.
 :::
+
+::: {.fragment}
+- La idea era sencilla: el número de búsquedas de palabras asociadas a la influenza está correlacionado con el número de casos de influenza.
+:::
+
+::: {.fragment}
+- Pero, a pesar de reportar correlaciones cercanas al 100% [@ginsbergDetectingInfluenzaEpidemics2009], llegó a sobreestimar casos en un 100% en EEUU [@kandulaReappraisingUtilityGoogle2019; @lazerParableGoogleFlu2014].
+:::
+
 
 ![](fig/google-fail-flu-trends.png){width="90%" fig-align="center"}
 
-## Caso 1: Google Flu Trends
-
-- En el año ..., utilizando "Big Data," Google creo el servicio Google Flu Trends.
-
-- La idea era lógica: En los lugares donde la gente comienza a experimentar sintomas, las tendencias de búsqueda lo reflejarán.
-
-- El resultado: Embarazosamente para Google, no muy bueno:
-
-![Imagen del grafico]()
 
 ## Caso 2: Derechos de Autor {.smaller}
 
@@ -222,39 +244,62 @@ Un texto simple: "captura de pantalla de peliculas populares"
 :::
 :::
 
-# Parte III: La teoría al rescate
+# Parte III: La teoría al rescate {background-color="black"}
 
-## Volviendo a lo Básico
+## Volviendo a lo Básico {.smaller}
 
+::: {.fragment}
 - Un motivo por el cual la AI y ML no se han tomado las ciencias por completo es claro (ver ejemplos anteriores).
+:::
 
+::: {.fragment}
 - El mínimo común de esos problemas: La falta de teoría (no teoría matemática).
+:::
 
+::: {.fragment}
 - Existe todo un campo en las ciencias de la computación para poder explicar los resultado de la IA/ML.
+:::
 
-- Incluso el ejército de los EEUU está invirtiendo en el asunto.
-
-## Volviendo a lo Básico (cont.)
-
+::: {.fragment}
 - Pero con tanto hype, es difícil alejarse de esto.
+:::
 
-- Sin embargo, algunos científicos han comenzado a proponer algo distinto: Casar los modelos mecanísticos con la AI/ML.
+::: {.fragment}
+- Sin embargo, algunos científicos han comenzado a proponer algo distinto: Combinar los modelos mecanísticos con la AI/ML.
+:::
 
 ## El aprendizaje de máquina mecanístico {.smaller}
 
-Una idea simple
+El Aprendizaje de Máquina Mechanistico (*mechanistic ML*, o MechML)--también conocido como *theory-guided data science*/*machine learning*: Un híbrido entre modelos guiados por teoría y modelos guiados por los datos.
 
-- Las ciencias llevan cientos de años acumulando conocimiento.
+::: {.columns}
 
-- En la física, por ejemplo, contamos con modelos que explican con gran detalle una parte importante de lo que observamos.
+::: {.column width="45%" .fragment}
+### Modelos mecanísticos
+::: {.callout}
+- Centrados en inferencia (causalidad).
+- Superiores con pocos datos.
+- Encierran información más allá de los datos.
+:::
+:::
+::: {.column width="45%" .fragment}
+### Aprendizaje de máquina
+::: {.callout}
+- Data-driven (predicción).
+- Superiores con big data.
+- Encuentra patrones "escondidos".
+:::
+:::
 
-- La AI/ML por otro lado tiene la ventaja cuando se trata de procesar cantidades masivas de datos.
+:::
 
-Entonces, ¿Por qué no utilizamos ambos?
+::: {.fragment}
+El aprendizaje de máquina ayuda a explicar lo que la teoría no puede... pero aún necesitamos teoría [@lazerParableGoogleFlu2014]!
+:::
 
-## Estado del arte en MechML
+## Estado del arte en MechML {.smaller}
 
-::: {style="font-size: 60%"}
+::: {style="font-size: 70%"}
 ::: {.fragment}
 - Corregir predicciones mechanisticas, como por ejemplo, en modelos basados en agentes [@compagniHybridNeuralNetworkSEIR2022].
 :::
@@ -289,7 +334,7 @@ Entonces, ¿Por qué no utilizamos ambos?
 
 :::
 
-## Caso 1: Detectando la temperatura de la superficie del agua {.smaller}
+## Caso 1: Detectando la temperatura de la superficie del agua {style="font-size: 60%"}
 
 - En @jiaPhysicsGuidedMachineLearning2021, los autores presentan su modelo de "redes neuronales recurrentes guiadas por la física" (*physics-guided recurrent neural network model*, o PGRNN)"
 
@@ -304,29 +349,50 @@ Entonces, ¿Por qué no utilizamos ambos?
 
 > Así, PGRNN puede aprovechar las fortalezas de los modelos basados en la física y llena vacíos de conocimiento empleando modelos predictivos de vanguardia que aprenden de los datos. -- @jiaPhysicsGuidedMachineLearning2021
 
-## Caso 2: Mejorando los pronósticos de la influenza {.smaller}
+## Caso 2: Mejorando los pronósticos de la influenza {style="font-size: 60%"}
 
 - @wangTDEFSITheoryguidedDeep2020 presenta el modelo de predicción epidemiológica utilizando redes neuronales guiadas por modelos teóricos (*Theory-guided Deep Learning-based Epidemic Forecasting with Synthetic Information*, o TDEFSI).
 
 ::: {layout-align="center"}
-![](fig/theory-guided-influenza-forecast.png)
+![](fig/theory-guided-influenza-forecast.png){width=80%}
 :::
 
-## Caso 3: Prediciendo lo que hacen los genes
+## Caso 3: Prediciendo lo que hacen los genes {style="font-size: 60%"}
 
-- En mi propia investigación me he visto motivado a utilizar la AI/ML.
+- Junto con colaboradores de USC, desarrollamos un modelo de MechML para predecir funciones genéticas (en proceso de publicación).
 
-- Desarrollé un modelo mecanístico de la evolución de los genes.
+::: {layout-align="center"}
+![](fig/aphylo-mechml.png){width="80%"}
+:::
 
-- La clave: Incorpora información sobre los procesos que llevan a aparición de nuevas funciones genénicas.
+- En un experimento, el error de predicción bajó de 0.29 (mecanístico) a 0.14.
 
-- Mi contribución: Incluir mis predicciones mecanísticas en un modelo de AI/ML.
 
-- Resultado: El modelo combinado superó a ambos por XXX.
+## Discusión {.smaller}
 
-# Discusión
+::: {.fragment}
+- La AI/ML tiene una capacidad infinita de potenciar la productividad humana.
+:::
 
-## Discusión
+::: {.fragment}
+- LA AI generativa explota grandes volúmenes de datos para identificar patrones (secuencias).
+:::
+
+::: {.fragment}
+- Pero, la AI/ML no es perfecta... todavía necesitamos la teoría!
+:::
+
+::: {.fragment}
+- El aprendizaje de máquina mecanístico (*Mechanistic ML*) es un híbrido entre modelos guiados por teoría y modelos guiados por los datos.
+:::
+
+::: {.fragment}
+- El MechML ha demostrado tener la capacidad de mejorar la predicción de modelos de AI/ML y teóricos.
+:::
+
+::: {.fragment}
+- Inyectar teoría en la AI/ML es el siguiente paso en la revolución de la AI.
+:::
 
 ## Fin {background-color="black"}
 
