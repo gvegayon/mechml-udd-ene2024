@@ -38,7 +38,7 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 
 
 
-## AI, Machine Learning, y Estadística
+## AI, Machine Learning, y Estadística {.smaller}
 
 ::: {.columns}
 
@@ -68,25 +68,29 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 
 - Más aún, estos modelos adquieren potencial sólo con grandes volúmenes de datos...
 
-## ¿Cómo funcionan estos modelos?
+## ¿Cómo funcionan estos modelos? {.smaller}
 
 En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina funcionan de la siguiente manera:
 
-1. Se recopilan datos (base de datos o BD).
+::: {.fragment}
 
-2. Usualmente esos datos están etiquetados (aprendizaje supervisado) o no (aprendizaje no supervisado.)
+1. Obtener datos:
 
-3. Se diseña un modelo (arquitectura) que significa:
+    a. Etiquetados: aprendizaje supervisado.
+    b. No etiquetados: aprendizaje no supervisado.
 
-    a. Identificar qué variables de la BD se utilizarán (selección).
+3. Diseñar modelo (arquitectura):
 
-    b. Se especifíca cómo se procesarán los datos (hyperpárametros).
+    a. Qué variables de la BD se utilizarán (selección).
 
-    c. Se elíge cuál es el criterio para decir si el algoritmo funciona o no (función de pérdida)
+    b. Como se procesarán los datos (hyperpárametros).
 
-4. Entrenar el modelo utilizando sólo una parte de la BD (set de entrenamiento.)
+    c. Definir criterio para aproximar los datos (función de pérdida).
+
+4. Entrenar el modelo  con set de entrenamiento (una parte de los datos).
 
 5. Evaluar la calidad del modelo sobre los datos no usados para entrenar (set de validación.)
+:::
 
 ## ¿Cuál es el estado del arte?
 
@@ -100,9 +104,9 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 # Parte II: Los desafios
 
-## Hemos avanzado, pero...
+## Hemos avanzado, pero... {.smaller}
 
-::: {style="font-size: 60%"}
+::: {}
 
 ::: {.fragment}
 - Con toda la atención que ha recibido la AI/ML, la atención está volviendo a la teoría (inferencia) [@bakerMechanisticModelsMachine2018; @pearlSevenToolsCausal2019]
@@ -126,13 +130,22 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 ![Imagen del grafico]()
 
-## Caso 2: Derechos de Autor
+## Caso 2: Derechos de Autor {.smaller}
 
-- El diario New York Times que ChatGPT reproducia contenido literal del diario.
+::: {.columns}
+::: {.column}
+
+- El diario New York Times [NYT] que ChatGPT reproducia contenido literal del diario.
 
 - El problema es que aquel contenido estaba protegido por un PayWall.
 
 - NYT terminó demandando a OpenAI y Microsoft (dueños de ChatGPT) por violación de derechos de autor [@cnneeDiarioNewYork2023; @munoz-ledoOpenAIAfirmaQue2024].
+
+:::
+::: {.column width="50%"}
+![Imagen reproducida del artículo @archiveNewYorkTimes2023. ChatGPT fue capaz de extraer información completa de NYT.](https://nypost.com/wp-content/uploads/sites/2/2023/12/new-york-times-sues-openai-74155931.jpg?resize=1024,874&quality=75&strip=all)
+:::
+:::
 
 ## Caso 3: Surreal
 
@@ -140,13 +153,13 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Midjourney is getting crazy powerful—none of these are real photos, and none of the people in them exist. <a href="https://t.co/XXV6RUrrAv">pic.twitter.com/XXV6RUrrAv</a></p>&mdash; Miles (@mileszim) <a href="https://twitter.com/mileszim/status/1613965684937224192?ref_src=twsrc%5Etfw">January 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## Caso 4: Error 404
+## Caso 4: Pinocho {.smaller}
+
+Un correo real que recibí durante el 2023:
 
 > Estimado Sr. Vega Yon,
 >
 > Soy un académico en Alemania estudiando difusión en redes. Encontré (o mejor dicho, **ChatGPT encontró) que su librería netdiffuseR aparentemente incluía una función llamada "multi.diffusion"** para estimar exactamente ese caso. Parece que había **un artículo** de Wang, Robins y Pattison, "Competing Risks Diffusion in Networks: A Continuation Ratio Model with Time-Varying Effects" **así como un Vignette** llamado "competingrisks" disponible. Sin embargo, **no pude encontrar ninguno de esos.**
->
-> -- Adaptado de un correo electrónico real.
 
 ::: {.fragment}
 ¿Cuál creen ustedes que fué el problema?...
@@ -155,15 +168,15 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 ¡Dicha función + paper + vignette nunca existieron!
 :::
 
-## Caso 5: Demasiado bueno
+## Caso 5: Demasiado bueno {.smaller}
 
-::: {style="font-size: 60%"}
+::: {}
 > En resumen, nuestro trabajo suguiere que los datos utilizados para entrenar los mejores LLM pueden ser extraidos con técnicas simples
 >
 > -- Traducido al español del artículo @nasrScalableExtractionTraining2023
 :::
 
-::: {style="font-size: 60%"}
+::: {}
 Utilizando el texto: "fontanero de video juegos", los autores del artículo lograron extraer la siguiente imagen:
 :::
 
@@ -177,7 +190,7 @@ Un texto simple: "captura de pantalla de peliculas populares"
 
 ::: {.column width="50%"}
 
-![Imagen descargada de @GenerativeAIHas](fig/movies.png)
+![Imagen descargada de @GenerativeAIHas](fig/movies.png){width="70%" fig-align="center"}
 :::
 ::: {.column width="50%"}
 - El problema: Como los LLM tienen billones de parámetros, es muy fácil terminar memorizando datos de entrenamiento... eso no es aprendizaje.
