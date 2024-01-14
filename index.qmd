@@ -7,6 +7,7 @@ institute:
   - Booz Allen Hamilton, US
 slide-level: 2
 slide-number: true
+bibliography: references.bib
 ---
 
 ## {background-color="black"} 
@@ -30,23 +31,32 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 
 ## Definición
 
-Según Wikipedia:
 
-> La Inteligencia Artificial (o AI por sus siglas en inglés...)
+> "[L]a capacidad de un sistema para interpretar correctamente datos externos, y así aprender y emplear esos conocimientos para lograr tareas y metas concretas a través de la adaptación flexible."
+>
+> -- @kaplanSiriSiriMy2019
 
-## ¿Cuál es la diferencia entre AI, Machine Learning, y Estadística?
+
+
+## AI, Machine Learning, y Estadística
+
+::: {.columns}
+
+::: {.column width="50%"}
 
 - AI es un sub-campo del aprendizaje de máquina.
 
 - Para algunos, AI y ML sólo es esadística sin preocupaciones. (tiene algo de cierto!)
 
-- La mayor diferencia entre AI/ML y estadística está en:
+- En estadística buscamos hacer inferencias (causalidad,) mientras que en AI y ML buscamos predecir (correlación.)
 
-    a. Lenguaje: Cómo llamamos a las variables.
+- La AI Generative es un sub-campo de la AI donde el foco es "crear contenido" .
+:::
+::: {.column width="50%"}
+![Lily Popova Zhuhadar, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/3/34/Unraveling_AI_Complexity_-_A_Comparative_View_of_AI%2C_Machine_Learning%2C_Deep_Learning%2C_and_Generative_AI.png)
+:::
 
-    b. Objetivo: Estadistica es inferencia, AI/ML es predicción.
-
-- Este último punto será importante para más adelante en la presentación.
+:::
 
 ## ¿Por qué ahora?
 
@@ -92,9 +102,19 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 ## Hemos avanzado, pero...
 
-- Los últimos avances han sido extraordinarios, pero todavía hay mucho que aprender.
+::: {style="font-size: 60%"}
 
-- Evidecia de esto son algunos de los problemas que se observa en la calidad de las predicciones.
+::: {.fragment}
+- Con toda la atención que ha recibido la AI/ML, la atención está volviendo a la teoría (inferencia) [@bakerMechanisticModelsMachine2018; @pearlSevenToolsCausal2019]
+:::
+
+::: {.fragment}
+- El caso de Google Flu Trends: El artículo reportó una correlación de casi 100% [@ginsbergDetectingInfluenzaEpidemics2009], pero sobreestimó [@kandulaReappraisingUtilityGoogle2019; @lazerParableGoogleFlu2014].
+:::
+
+:::
+
+![](fig/google-fail-flu-trends.png){width="90%" fig-align="center"}
 
 ## Caso 1: Google Flu Trends
 
@@ -106,27 +126,63 @@ En términos sencillos, **todos** los modelos de IA y aprendizaje de máquina fu
 
 ![Imagen del grafico]()
 
-## Caso 2: Modelo demasiado bueno
+## Caso 2: Derechos de Autor
 
-- En Enero de 2024, el usuario XXXX posteo en X la siguiente imagen:
+- El diario New York Times que ChatGPT reproducia contenido literal del diario.
 
-![Imagen de movie prompts]()
+- El problema es que aquel contenido estaba protegido por un PayWall.
 
-- El problema: Como los LLM tienen billones de parámetros, es muy fácil terminar memorizando datos de entrenamiento... eso no es aprendizaje.
+- NYT terminó demandando a OpenAI y Microsoft (dueños de ChatGPT) por violación de derechos de autor [@cnneeDiarioNewYork2023; @munoz-ledoOpenAIAfirmaQue2024].
 
 ## Caso 3: Surreal
 
-- Aca, la tarea era "sencilla:" Actores de películas en conferencia de prensa en Canes:
+- Puede generar imágenes realistas, pero no entiende de anatomía humana:
 
-![Dedos y demas combinado]()
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Midjourney is getting crazy powerful—none of these are real photos, and none of the people in them exist. <a href="https://t.co/XXV6RUrrAv">pic.twitter.com/XXV6RUrrAv</a></p>&mdash; Miles (@mileszim) <a href="https://twitter.com/mileszim/status/1613965684937224192?ref_src=twsrc%5Etfw">January 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Caso 4: Error 404
 
-En ABC del 2023 recibí este correo:
+> Estimado Sr. Vega Yon,
+>
+> Soy un académico en Alemania estudiando difusión en redes. Encontré (o mejor dicho, **ChatGPT encontró) que su librería netdiffuseR aparentemente incluía una función llamada "multi.diffusion"** para estimar exactamente ese caso. Parece que había **un artículo** de Wang, Robins y Pattison, "Competing Risks Diffusion in Networks: A Continuation Ratio Model with Time-Varying Effects" **así como un Vignette** llamado "competingrisks" disponible. Sin embargo, **no pude encontrar ninguno de esos.**
+>
+> -- Adaptado de un correo electrónico real.
 
-> ...
+::: {.fragment}
+¿Cuál creen ustedes que fué el problema?...
+:::
+::: {.fragment}
+¡Dicha función + paper + vignette nunca existieron!
+:::
 
-¿Cuál creen ustedes que fué el problema?... ¡Dicha función nunca existió!
+## Caso 5: Demasiado bueno
+
+::: {style="font-size: 60%"}
+> En resumen, nuestro trabajo suguiere que los datos utilizados para entrenar los mejores LLM pueden ser extraidos con técnicas simples
+>
+> -- Traducido al español del artículo @nasrScalableExtractionTraining2023
+:::
+
+::: {style="font-size: 60%"}
+Utilizando el texto: "fontanero de video juegos", los autores del artículo lograron extraer la siguiente imagen:
+:::
+
+![Imagen descargada de @GenerativeAIHas](fig/plumber.png){width="50%" fig-align="center"}
+
+---
+
+Un texto simple: "captura de pantalla de peliculas populares"
+
+::: {.columns}
+
+::: {.column width="50%"}
+
+![Imagen descargada de @GenerativeAIHas](fig/movies.png)
+:::
+::: {.column width="50%"}
+- El problema: Como los LLM tienen billones de parámetros, es muy fácil terminar memorizando datos de entrenamiento... eso no es aprendizaje.
+:::
+:::
 
 # Parte III: La teoría al rescate
 
