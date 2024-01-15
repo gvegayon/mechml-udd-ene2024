@@ -1,6 +1,7 @@
 ---
 format: revealjs
-title: La Muerte del Aprendizaje de Máquina
+title: '"La Muerte del Aprendizaje de Máquina"'
+subtitle: 'o "cómo la teoría puede mejorar a las máquinas"'
 author: George G. Vega Yon, Ph.D.
 institute: 
   - University of Utah, US
@@ -46,29 +47,46 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 
 ::: {.column width="50%"}
 
+::: {.fragment}
 - AI es un sub-campo del aprendizaje de máquina.
+:::
 
+::: {.fragment}
 - Para algunos, AI y ML sólo es esadística sin preocupaciones. (tiene algo de cierto!)
+:::
 
+::: {.fragment}
 - En estadística buscamos hacer inferencias (causalidad,) mientras que en AI y ML buscamos predecir (correlación.)
+:::
 
+::: {.fragment}
 - La AI Generative es un sub-campo de la AI donde el foco es "crear contenido" .
 :::
+:::
 ::: {.column width="50%"}
-![Lily Popova Zhuhadar, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/3/34/Unraveling_AI_Complexity_-_A_Comparative_View_of_AI%2C_Machine_Learning%2C_Deep_Learning%2C_and_Generative_AI.png)
+![Lily Popova Zhuhadar, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](Unraveling_AI_Complexity.png)
 :::
 
 :::
 
 ## ¿Por qué ahora?
 
-- Los modelos de redes neuronales que dan poder a la IA tienen más de ...
-
+::: {.fragment}
 - Un componente fundamental: Las Redes Neuronales Artificiales.
+:::
 
-- Pero la tecnología necesaria tiene ...
+::: {.fragment}
+- Los modelos de redes neuronales que dan poder a la IA tienen billones de parámetros.
+:::
 
-- Más aún, estos modelos adquieren potencial sólo con grandes volúmenes de datos...
+::: {.fragment}
+- Más aún, estos modelos adquieren potencial sólo con grandes volúmenes de datos; que sólo se han podido obtener en los últimos años.
+:::
+
+::: {.fragment}
+- Y por último, la capacidad de procesamiento de los computadores ha aumentado exponencialmente.
+:::
+
 
 ## ¿Cómo funcionan estos modelos? {.smaller}
 
