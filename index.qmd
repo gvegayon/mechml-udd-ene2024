@@ -15,7 +15,7 @@ footer: '<text style="font-size: 100%">La Muerte del Aprendizaje de Máquina -- 
 
 ## {background-color="black"} 
 
-Pueden descargar la presentación en https://ggv.cl/udd-ene2024
+Pueden descargar la presentación en https://ggv.cl/slides/udd-ene2024
 
 ## Sobre mi
 
@@ -64,7 +64,7 @@ Pueden descargar la presentación en https://ggv.cl/udd-ene2024
 :::
 :::
 ::: {.column width="50%"}
-![Lily Popova Zhuhadar, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](Unraveling_AI_Complexity.png)
+![Lily Popova Zhuhadar, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons](fig/Unraveling_AI_Complexity.png)
 :::
 
 :::
